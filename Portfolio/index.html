@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My portfolio</title>
+        <link rel="icon" type="image/jpeg" href="/images/webimg.jpeg">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="style.css">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="navbartoggle.js" defer></script>
+        <script src="https://kit.fontawesome.com/276348f725.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="myNavBar">
+                <div id="logo">
+                   <a href="index.html"><h1>Edwin Biwott</h1></a>
+                </div>
+                <a href="#" id="toggle-button"> <span"><i class="fa-solid fa-bars"></i></span></a>
+                <nav id="navbar">
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="about.html">About</a></li>
+                        <li> <a href="#h2projects">Projects</a></li>
+                        <li> <a href="#contactus">Contact</a></li>
+                        <span class="material-symbols-sharp" id="darkmoon">
+                            dark_mode
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+            <div id="displaymain">
+            <div id="display">
+                <h1>Hello, I'm Edwin </h1>
+                <div id="displaycontent">
+                    <p>
+                        A UX/UI Designer from London, interested in creating beautiful,<br>
+                         meaningful and seamless experiences.
+                    </p>
+                </div>
+                <div id="displaybuttons">
+                    <a href="about.html"><button id="knowBtn">Get To Know Me</button></a>
+                    <a href="#h2projects"><button id="projectsBtn">View My Projects</button></a>
+                </div>
+            </div>
+            </div>
+            <div id="myprojects">
+                <h1 id="h2projects">PROJECTS</h1>
+                <div id="rental">
+                    <h3>Rental Management</h3>
+                    <p>The system is designed to handle tasks such as tenant management, rent collection, <br>maintenance requests, billing, and reporting
+                    </p>
+                    <img src="./images/rental.png" alt="Rental Management System">
+                    <div id="projectBtn">
+                        <a href="#"><button id="rentalBtn">View Project</button></a>
+                    </div>
+                </div>
+                <div id="rental">
+                    <h3>Rental Management</h3>
+                    <p>The system is designed to handle tasks such as tenant management, rent collection, <br>maintenance requests, billing, and reporting
+                    </p>
+                    <img src="./images/checkout.png" alt="Rental Management System">
+                    <div id="projectBtn">
+                        <a href="#"><button id="rentalBtn">View Project</button></a>
+                    </div>
+                </div>
+                <div id="rental">
+                    <h3>Rental Management</h3>
+                    <p>The system is designed to handle tasks such as tenant management, rent collection, <br>maintenance requests, billing, and reporting
+                    </p>
+                    <img src="./images/hospital.png" alt="Rental Management System">
+                    <div id="projectBtn">
+                        <a href="#"><button id="rentalBtn">View Project</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="moreprojects">
+                <div id="firstcolumn">
+                    <div id="projectimg">
+                        <img src="./images/portfolio.png" alt="My portfolio project" style="width: 100%;">
+                        <div id="carhire">
+                            <h2>My Portfolio</h2>
+                            <a href="index.html"><button id="rentalBtn">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="firstcolumn">
+                    <div id="projectimg">
+                        <img src="./images/carhire.png" alt="car rental system">
+                        <div id="carhire">
+                            <h2>Car Hire System</h2>
+
+                            <a href="#"><button id="rentalBtn">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="firstcolumn">
+                    <div id="projectimg">
+                        <img src="./images/carhire.png" alt="car rental system">
+                        <div id="carhire">
+                            <h2>Car Hire System</h2>
+                            <a href="#"><button id="rentalBtn">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="firstcolumn">
+                    <div id="projectimg">
+                        <img src="./images/carhire.png" alt="car rental system">
+                        <div id="carhire">
+                            <h2>Car Hire System</h2>
+                            <a href="#"><button id="rentalBtn">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contactus">
+                <div id="contactLeft">
+                    <h2 id="contactus">Send An Email</h2>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <div id="input-row">
+                            <div id="input-group">
+                                <label>Business Name</label>
+                                <input type="text" id="business" placeholder="Enter Business Name" required>
+                            </div>
+                            <div id="input-group">
+                                <label>Your Email</label>
+                                <input type="email" id="email" placeholder="Enter Your Email" required>
+                            </div>
+                        </div>
+                        <div id="input-row">
+                            <div id="input-group">
+                                <label>Project Name</label>
+                                <input id="projectName" type="text" placeholder="Enter Your project Name" required>
+                            </div>
+                            <div id="input-group">
+                                <label>Budget</label>
+                                <input id="budget" type="number" placeholder="Enter Your Estimated Budget" required>
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea id="message" placeholder="Describe your project briefly..." cols="5" required></textarea>
+                        <button type="submit" id="submitBtn">Submit</button>
+                    </form>
+                </div>
+                <div id="contactRight">
+                    <h2>Get In Touch</h2>
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>chepkosum@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td>+254 726620050</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>IPS Building 6th Floor,Kimathi Street<br>Opposite Old Mutual</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <footer>
+                    <a href="https://twitter.com/EisenhowerEdwin" class="footericons"><i class="fa fa-twitter "></i> </a> &nbsp&nbsp &nbsp&nbsp
+                    <a href="https://github.com/chepkosum/project" class="footericons"><i class="fa fa-github "></i> </a>&nbsp&nbsp &nbsp&nbsp
+                    <a href="https://www.linkedin.com/feed/" class="footericons"><i class="fa fa-linkedin "></i> </a> <br><br>
+                    &copy 2023 Design with Edwin
+            </footer>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="sendmail.js"></script>
+        <script src="darkmode.js"></script>
+    </body>
+</html>
